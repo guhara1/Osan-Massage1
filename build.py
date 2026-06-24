@@ -13,6 +13,8 @@ import os
 import re
 import shutil
 import sys
+from datetime import datetime, timezone
+from email.utils import format_datetime
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -375,6 +377,11 @@ def render_page(page: dict) -> str:
 def build() -> None:
     report = []
     sitemap_urls = []
+    index_pages = []  # RSS·일괄 색인 통보용 (색인 허용 페이지)
+    base = BASE_URL.rstrip("/")
+    now = datetime.now(timezone.utc)
+    lastmod = now.date().isoformat()
+    rss_date = format_datetime(now)
 
     # public 디렉터리가 없으면 생성
     os.makedirs(PUBLIC_DIR, exist_ok=True)
@@ -390,12 +397,21 @@ def build() -> None:
         chars = text_length(page["body"])
         noindex = page.get("noindex", False) or chars < MIN_INDEX_CHARS
         if not noindex:
-            sitemap_urls.append(BASE_URL.rstrip("/") + "/" + path)
+            url = base + "/" + path
+            sitemap_urls.append(url)
+            index_pages.append({
+                "url": url,
+                "title": page["title"],
+                "desc": page["desc"],
+            })
         report.append((path or "/", chars, "noindex" if noindex else "index"))
 
-    # sitemap.xml
+    # sitemap.xml (lastmod 포함 — 색인 갱신 신호)
     urls = "\n".join(
-        f"  <url><loc>{u}</loc></url>" for u in sitemap_urls
+        f"  <url><loc>{u}</loc><lastmod>{lastmod}</lastmod>"
+        f"<changefreq>{'daily' if u == base + '/' else 'weekly'}</changefreq>"
+        f"<priority>{'1.0' if u == base + '/' else '0.8'}</priority></url>"
+        for u in sitemap_urls
     )
     with open(os.path.join(PUBLIC_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(
@@ -404,11 +420,45 @@ def build() -> None:
             f"{urls}\n</urlset>\n"
         )
 
-    # robots.txt
+    # rss.xml (RSS 2.0 피드 — 네이버·구글·빙 신규/갱신 발견 가속)
+    items = "\n".join(
+        "  <item>\n"
+        f"    <title>{html.escape(p['title'])}</title>\n"
+        f"    <link>{p['url']}</link>\n"
+        f"    <guid isPermaLink=\"true\">{p['url']}</guid>\n"
+        f"    <description>{html.escape(p['desc'])}</description>\n"
+        f"    <pubDate>{rss_date}</pubDate>\n"
+        "  </item>"
+        for p in index_pages
+    )
+    with open(os.path.join(PUBLIC_DIR, "rss.xml"), "w", encoding="utf-8") as f:
+        f.write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+            "<channel>\n"
+            f"  <title>{html.escape(BRAND)} 오산 출장마사지·홈타이</title>\n"
+            f"  <link>{base}/</link>\n"
+            f'  <atom:link href="{base}/rss.xml" rel="self" type="application/rss+xml" />\n'
+            "  <description>오산 출장마사지·홈타이 지역별 방문 관리 안내</description>\n"
+            "  <language>ko</language>\n"
+            f"  <lastBuildDate>{rss_date}</lastBuildDate>\n"
+            f"{items}\n"
+            "</channel>\n</rss>\n"
+        )
+
+    # robots.txt (모든 검색엔진 허용 + 사이트맵/RSS 안내, 스크립트 디렉터리 차단)
     with open(os.path.join(PUBLIC_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(
-            "User-agent: *\nAllow: /\n\n"
-            f"Sitemap: {BASE_URL.rstrip('/')}/sitemap.xml\n"
+            "User-agent: *\n"
+            "Allow: /\n"
+            "Disallow: /tools/\n\n"
+            "# 주요 크롤러 명시 허용 (구글·빙·네이버 Yeti·다음)\n"
+            "User-agent: Googlebot\nAllow: /\n\n"
+            "User-agent: Bingbot\nAllow: /\n\n"
+            "User-agent: Yeti\nAllow: /\n\n"
+            "User-agent: Daum\nAllow: /\n\n"
+            f"Sitemap: {base}/sitemap.xml\n"
+            f"Sitemap: {base}/rss.xml\n"
         )
 
     # .nojekyll (GitHub Pages)

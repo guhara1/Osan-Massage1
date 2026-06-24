@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /tools/
+
+# 주요 크롤러 명시 허용 (구글·빙·네이버 Yeti·다음)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daum
+Allow: /
 
 Sitemap: https://osan-massage1.pages.dev/sitemap.xml
+Sitemap: https://osan-massage1.pages.dev/rss.xml

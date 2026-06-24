@@ -56,6 +56,37 @@ python3 build.py
 - E-E-A-T / 도움되는 콘텐츠 / Who·How·Why 원칙 반영, YMYL 신뢰 신호 강화
 - 방문형 서비스(오프라인 주소 없음)이므로 LocalBusiness 대신 Organization/HealthAndBeautyBusiness 스키마 사용
 
+## 색인(인덱싱) 자동화
+
+빌드 시 자동 생성:
+- `sitemap.xml` — `lastmod`·`changefreq`·`priority` 포함 (색인 허용 페이지만)
+- `rss.xml` — RSS 2.0 피드 (신규/갱신 발견 가속)
+- `robots.txt` — 구글·빙·네이버(Yeti)·다음 허용 + 사이트맵/RSS 안내
+- 메인페이지 `<meta name="naver-site-verification">` 등록 완료
+
+### IndexNow (빙·네이버 즉시 통보) — 키 파일 셋업 완료
+- 키 파일: `5b49b75895edd307d475da6a04ce901c.txt` (사이트 루트에 배포되어 공개 접근 가능)
+- **첫 일괄 통보** (로컬에서 1회):
+  ```bash
+  python3 build.py            # 최신 sitemap.xml 생성
+  python tools/indexnow.py    # sitemap 의 모든 URL 을 빙·네이버에 즉시 통보
+  ```
+- **글 올릴 때마다** — 특정 URL만 통보:
+  ```bash
+  python tools/indexnow.py https://osan-massage1.pages.dev/새글경로/
+  ```
+
+### 구글 Indexing API (구글은 IndexNow 미참여)
+1. Google Cloud → Indexing API 사용 설정 → 서비스 계정 JSON 키를 `tools/service-account.json` 로 저장 (`.gitignore` 처리됨, 커밋 안 됨)
+2. Search Console 에서 서비스 계정 이메일을 사이트 **소유자**로 추가
+3. `pip install google-auth requests`
+4. 실행: `python tools/google_indexing.py` (또는 특정 URL 인자)
+
+### 사이트맵 ping (참고)
+구글·빙 모두 sitemap ping 엔드포인트를 폐지했습니다(2023). `tools/ping_sitemap.py` 는 IndexNow 를 호출하고 폐지된 ping 을 best-effort 로 시도합니다. **최초 1회는 Search Console·네이버 서치어드바이저에 `sitemap.xml` 을 직접 제출**하세요.
+
+> 가장 빠른 순서: ① IndexNow(빙·네이버) → ② 구글 Indexing API → ③ Search Console/서치어드바이저 사이트맵 제출
+
 ## 디자인
 
 - **프리미엄 다크 팔레트**: 딥 옵시디언 네이비 + 오렌지 #FF6B35 + 샴페인 골드
