@@ -12,7 +12,7 @@ def create_station_page(path, title, desc, h1, breadcrumb, body_content):
 
 osan_station = create_station_page(
     path="gyeonggi/osan/station/osan-station/",
-    title="오산역 출장마사지｜중앙동·원동 생활권 안내",
+    title="오산역 출장마사지｜중앙동·원동 생활권 홈타이 안내",
     desc="오산역 출장마사지 예약 전 중앙동, 원동, 오산터미널 인접 생활권을 확인하세요.",
     h1="오산역 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("역세권 안내", None), ("오산역", "")],
@@ -50,7 +50,7 @@ osan_station = create_station_page(
 
 osandae_station = create_station_page(
     path="gyeonggi/osan/station/osandae-station/",
-    title="오산대역 출장마사지｜수청동·세교 생활권 안내",
+    title="오산대역 출장마사지｜수청동·세교 생활권 홈타이 안내",
     desc="오산대역 출장마사지 이용 전 수청동, 세교, 남촌동 인접 생활권을 확인하세요.",
     h1="오산대역 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("역세권 안내", None), ("오산대역", "")],
@@ -88,7 +88,7 @@ osandae_station = create_station_page(
 
 sema_station = create_station_page(
     path="gyeonggi/osan/station/sema-station/",
-    title="세마역 출장마사지｜세마동·양산동 생활권 안내",
+    title="세마역 출장마사지｜세마동·양산동 생활권 홈타이 안내",
     desc="세마역 출장마사지 예약 전 세마동, 양산동, 지곶동 생활권을 확인하세요.",
     h1="세마역 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("역세권 안내", None), ("세마역", "")],
@@ -126,7 +126,7 @@ sema_station = create_station_page(
 
 byeongjeom_nearby = create_station_page(
     path="gyeonggi/osan/station/byeongjeom-nearby-area/",
-    title="병점역 인접 출장마사지｜오산 북부 이동 기준 안내",
+    title="병점역 인접 출장마사지｜오산 북부 이동 기준 홈타이 안내",
     desc="병점역 인접 출장마사지 예약 전 오산 북부 세마동·세교 북부 이동 기준을 확인하세요.",
     h1="병점역 인접 생활권 안내",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("역세권 안내", None), ("병점역 인접", "")],
@@ -160,7 +160,7 @@ byeongjeom_nearby = create_station_page(
 
 seodongtan_nearby = create_station_page(
     path="gyeonggi/osan/station/seodongtan-nearby-area/",
-    title="서동탄역 인접 출장마사지｜세마·북오산 이동 기준 안내",
+    title="서동탄역 인접 출장마사지｜세마·북오산 이동 기준 홈타이 안내",
     desc="서동탄역 인접 출장마사지 예약 전 세마동·북오산 이동 기준을 확인하세요.",
     h1="서동탄역 인접 생활권 안내",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("역세권 안내", None), ("서동탄역 인접", "")],
@@ -194,7 +194,7 @@ seodongtan_nearby = create_station_page(
 
 jinwi_nearby = create_station_page(
     path="gyeonggi/osan/station/jinwi-nearby-area/",
-    title="진위역 인접 출장마사지｜초평·갈곶 이동 기준 안내",
+    title="진위역 인접 출장마사지｜초평·갈곶 이동 기준 홈타이 안내",
     desc="진위역 인접 출장마사지 예약 전 초평동·갈곶 이동 기준을 확인하세요.",
     h1="진위역 인접 생활권 안내",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("역세권 안내", None), ("진위역 인접", "")],

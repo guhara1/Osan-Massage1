@@ -25,6 +25,41 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = ROOT
 MIN_INDEX_CHARS = 2000
 
+# 가격표를 넣지 않는 경로 (루트 리다이렉트 + 정보/정책 페이지)
+PRICING_SKIP = {
+    "",
+    "gyeonggi/osan/reservation/",
+    "gyeonggi/osan/check/",
+    "gyeonggi/osan/guide/",
+    "gyeonggi/osan/support/",
+    "gyeonggi/osan/support/privacy/",
+}
+
+# 공통 마사지 가격표 — class="pricing" 이므로 색인 글자수 계산에서 제외된다.
+PRICING_HTML = """
+<section class="pricing" id="pricing">
+<h2>마사지 가격 안내</h2>
+<div class="price-grid">
+  <div class="price-card">
+    <p class="price-dur">60분</p>
+    <p class="price-amount">90,000<span class="won">원</span></p>
+    <p class="price-desc">기본 마사지 서비스</p>
+  </div>
+  <div class="price-card price-card--featured">
+    <span class="price-badge">추천</span>
+    <p class="price-dur">90분</p>
+    <p class="price-amount">150,000<span class="won">원</span></p>
+    <p class="price-desc">가장 인기 있는 코스</p>
+  </div>
+  <div class="price-card">
+    <p class="price-dur">120분</p>
+    <p class="price-amount">180,000<span class="won">원</span></p>
+    <p class="price-desc">풀 마사지 서비스</p>
+  </div>
+</div>
+<p class="price-note">* 추가 이동비는 지역별 기본 이동권 범위를 초과 시 발생합니다. 예약 전에 정확한 지역 확인 후 상담해주세요.</p>
+</section>"""
+
 
 def text_length(body_html: str) -> int:
     """태그를 제거한 본문 글자수(공백 포함, 연속 공백은 1자).
@@ -183,6 +218,10 @@ def render_page(page: dict) -> str:
     desc = page["desc"]
     h1 = page["h1"]
     body = page["body"]
+    # 메인 + 모든 지역(지역·역세권·생활권) 페이지에 마사지 가격표를 자동 삽입한다.
+    # class="pricing" 블록은 text_length()에서 제외되므로 색인 글자수에 영향을 주지 않는다.
+    if path not in PRICING_SKIP:
+        body = body + PRICING_HTML
     crumbs = page.get("breadcrumb") or []
     extra_head = page.get("extra_head", "")
     hero = page.get("hero", "")

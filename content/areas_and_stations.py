@@ -12,7 +12,7 @@ def create_area_page(path, title, desc, h1, breadcrumb, body_content):
 
 osan_station_jungang = create_area_page(
     path="gyeonggi/osan/area/osan-station-jungang/",
-    title="오산역·중앙동 생활권 출장마사지｜원도심 방문 안내",
+    title="오산역·중앙동 생활권 출장마사지｜원도심 방문 홈타이 안내",
     desc="오산역·중앙동 생활권 출장마사지 예약 전 원동, 오산터미널, 오산시청 주변을 확인하세요.",
     h1="오산역·중앙동 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("오산역·중앙동 생활권", "")],
@@ -67,7 +67,7 @@ osan_station_jungang = create_area_page(
 
 osandae_sucheong = create_area_page(
     path="gyeonggi/osan/area/osandae-sucheong/",
-    title="오산대역·수청동 생활권 출장마사지｜세교 인접 안내",
+    title="오산대역·수청동 생활권 출장마사지｜세교 인접 홈타이 안내",
     desc="오산대역·수청동 생활권 출장마사지 이용 전 수청동, 세교, 신장 주변을 확인하세요.",
     h1="오산대역·수청동 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("오산대역·수청동 생활권", "")],
@@ -121,7 +121,7 @@ osandae_sucheong = create_area_page(
 
 sema_dong_area = create_area_page(
     path="gyeonggi/osan/area/sema-dong/",
-    title="세마역·세마동 생활권 출장마사지｜양산동·지곶동 안내",
+    title="세마역·세마동 생활권 출장마사지｜양산동·지곶동 홈타이 안내",
     desc="세마역·세마동 생활권 출장마사지 예약 전 세마역, 양산동, 지곶동을 확인하세요.",
     h1="세마역·세마동 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("세마역·세마동 생활권", "")],
@@ -176,7 +176,7 @@ sema_dong_area = create_area_page(
 
 segyeo_newtown = create_area_page(
     path="gyeonggi/osan/area/segyeo-newtown/",
-    title="세교신도시 출장마사지｜수청동·신장 인접 생활권 안내",
+    title="세교신도시 출장마사지｜수청동·신장 인접 생활권 홈타이 안내",
     desc="세교신도시 출장마사지 예약 전 수청동, 신장동, 내삼미동 주변을 확인하세요.",
     h1="세교신도시 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("세교신도시 생활권", "")],
@@ -230,7 +230,7 @@ segyeo_newtown = create_area_page(
 
 daewon_won_dong = create_area_page(
     path="gyeonggi/osan/area/daewon-won-dong/",
-    title="대원·원동 생활권 출장마사지｜오산역 남부 안내",
+    title="대원·원동 생활권 출장마사지｜오산역 남부 홈타이 안내",
     desc="대원·원동 생활권 출장마사지 예약 전 원동, 고현동, 갈곶동 주변을 확인하세요.",
     h1="대원·원동 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("대원·원동 생활권", "")],
@@ -284,7 +284,7 @@ daewon_won_dong = create_area_page(
 
 namchon_gwol_dong = create_area_page(
     path="gyeonggi/osan/area/namchon-gwol-dong/",
-    title="남촌·궐동 생활권 출장마사지｜오산대역 인접 안내",
+    title="남촌·궐동 생활권 출장마사지｜오산대역 인접 홈타이 안내",
     desc="남촌·궐동 생활권 출장마사지 예약 전 남촌동, 궐동, 청학동 주변을 확인하세요.",
     h1="남촌·궐동 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("남촌·궐동 생활권", "")],
@@ -338,7 +338,7 @@ namchon_gwol_dong = create_area_page(
 
 sinjang_sucheong = create_area_page(
     path="gyeonggi/osan/area/sinjang-sucheong/",
-    title="신장·수청 생활권 출장마사지｜세교 인접 안내",
+    title="신장·수청 생활권 출장마사지｜세교 인접 홈타이 안내",
     desc="신장·수청 생활권 출장마사지 예약 전 신장동, 수청동, 세교지구 주변을 확인하세요.",
     h1="신장·수청 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("신장·수청 생활권", "")],
@@ -392,7 +392,7 @@ sinjang_sucheong = create_area_page(
 
 chopyeong_gajang = create_area_page(
     path="gyeonggi/osan/area/chopyeong-gajang/",
-    title="초평·가장동 생활권 출장마사지｜오산 서부 이동 안내",
+    title="초평·가장동 생활권 출장마사지｜오산 서부 이동 홈타이 안내",
     desc="초평·가장동 생활권 출장마사지 예약 전 초평동, 가장동, 서동 이동 기준을 확인하세요.",
     h1="초평·가장동 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("초평·가장동 생활권", "")],
@@ -446,7 +446,7 @@ chopyeong_gajang = create_area_page(
 
 galgot_gohyeon = create_area_page(
     path="gyeonggi/osan/area/galgot-gohyeon/",
-    title="갈곶·고현 생활권 출장마사지｜오산 남부 차량 이동 안내",
+    title="갈곶·고현 생활권 출장마사지｜오산 남부 차량 이동 홈타이 안내",
     desc="갈곶·고현 생활권 출장마사지 예약 전 갈곶동, 고현동 차량 이동 기준을 확인하세요.",
     h1="갈곶·고현 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("갈곶·고현 생활권", "")],
@@ -500,7 +500,7 @@ galgot_gohyeon = create_area_page(
 
 osan_ic_logistics = create_area_page(
     path="gyeonggi/osan/area/osan-ic-logistics/",
-    title="오산 IC·물류 인접 생활권 출장마사지｜차량 이동 안내",
+    title="오산 IC·물류 인접 생활권 출장마사지｜차량 이동 홈타이 안내",
     desc="오산 IC·물류 인접 생활권 출장마사지 예약 전 차량 이동 기준과 이동비를 확인하세요.",
     h1="오산 IC·물류 인접 생활권 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("오산 IC·물류 인접 생활권", "")],

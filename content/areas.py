@@ -62,7 +62,7 @@ jungang_dong = create_area_page(
 
 daewon_area = create_area_page(
     path="gyeonggi/osan/daewon-area/",
-    title="대원동 출장마사지｜원동·갈곶동 인접 생활권 안내",
+    title="대원동 출장마사지｜원동·갈곶동 인접 생활권 홈타이 안내",
     desc="대원동 출장마사지 예약 전 원동, 고현동, 갈곶동 인접 생활권을 확인하세요.",
     h1="대원동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("대원 생활권", "")],
@@ -111,7 +111,7 @@ daewon_area = create_area_page(
 
 daewon_1_dong = create_area_page(
     path="gyeonggi/osan/daewon-1-dong/",
-    title="대원1동 출장마사지｜오산역·원동 생활권 안내",
+    title="대원1동 출장마사지｜오산역·원동 생활권 홈타이 안내",
     desc="대원1동 출장마사지 예약 전 오산역, 원동, 오산터미널 생활권을 확인하세요.",
     h1="대원1동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("대원1동", "")],
@@ -162,7 +162,7 @@ daewon_1_dong = create_area_page(
 
 daewon_2_dong = create_area_page(
     path="gyeonggi/osan/daewon-2-dong/",
-    title="대원2동 출장마사지｜고현동·갈곶동 인접 생활권 안내",
+    title="대원2동 출장마사지｜고현동·갈곶동 인접 생활권 홈타이 안내",
     desc="대원2동 출장마사지 예약 전 고현동, 갈곶동, 세교 남부 생활권을 확인하세요.",
     h1="대원2동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("대원2동", "")],
@@ -208,7 +208,7 @@ daewon_2_dong = create_area_page(
 
 namchon_dong = create_area_page(
     path="gyeonggi/osan/namchon-dong/",
-    title="남촌동 출장마사지｜궐동·오산대역 인접 생활권 안내",
+    title="남촌동 출장마사지｜궐동·오산대역 인접 생활권 홈타이 안내",
     desc="남촌동 출장마사지 예약 전 궐동, 청학동, 오산대역 주변을 확인하세요.",
     h1="남촌동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("남촌동", "")],
@@ -254,7 +254,7 @@ namchon_dong = create_area_page(
 
 sinjang_area = create_area_page(
     path="gyeonggi/osan/sinjang-area/",
-    title="신장동 출장마사지｜수청동·세교 생활권 안내",
+    title="신장동 출장마사지｜수청동·세교 생활권 홈타이 안내",
     desc="신장동 출장마사지 이용 전 수청동, 세교지구, 오산대역 주변을 확인하세요.",
     h1="신장동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("신장 생활권", "")],
@@ -303,7 +303,7 @@ sinjang_area = create_area_page(
 
 sinjang_1_dong = create_area_page(
     path="gyeonggi/osan/sinjang-1-dong/",
-    title="신장1동 출장마사지｜오산대역·수청동 생활권 안내",
+    title="신장1동 출장마사지｜오산대역·수청동 생활권 홈타이 안내",
     desc="신장1동 출장마사지 예약 전 오산대역, 수청동, 은계동 생활권을 확인하세요.",
     h1="신장1동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("신장1동", "")],
@@ -353,7 +353,7 @@ sinjang_1_dong = create_area_page(
 
 sinjang_2_dong = create_area_page(
     path="gyeonggi/osan/sinjang-2-dong/",
-    title="신장2동 출장마사지｜세교지구·내삼미동 생활권 안내",
+    title="신장2동 출장마사지｜세교지구·내삼미동 생활권 홈타이 안내",
     desc="신장2동 출장마사지 예약 전 세교지구, 내삼미동, 수청동 생활권을 확인하세요.",
     h1="신장2동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("신장2동", "")],
@@ -399,7 +399,7 @@ sinjang_2_dong = create_area_page(
 
 sema_dong = create_area_page(
     path="gyeonggi/osan/sema-dong/",
-    title="세마동 출장마사지｜세마역·양산동 생활권 안내",
+    title="세마동 출장마사지｜세마역·양산동 생활권 홈타이 안내",
     desc="세마동 출장마사지 예약 전 세마역, 양산동, 지곶동, 세교 북부 생활권을 확인하세요.",
     h1="세마동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("세마동", "")],
@@ -449,7 +449,7 @@ sema_dong = create_area_page(
 
 chopyeong_dong = create_area_page(
     path="gyeonggi/osan/chopyeong-dong/",
-    title="초평동 출장마사지｜가장동·갈곶동 인접 생활권 안내",
+    title="초평동 출장마사지｜가장동·갈곶동 인접 생활권 홈타이 안내",
     desc="초평동 출장마사지 예약 전 가장동, 갈곶동, 고현동 이동 기준을 확인하세요.",
     h1="초평동 출장마사지",
     breadcrumb=[("오산", "/gyeonggi/osan/"), ("지역별 안내", None), ("초평동", "")],
