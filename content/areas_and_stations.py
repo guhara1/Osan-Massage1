@@ -11,15 +11,15 @@ def create_area_page(path, title, desc, h1, breadcrumb, body_content):
     }
 
 osan_station_jungang = create_area_page(
-    path="gyeonggi/osan/area/osan-station-jungang/",
+    path="area/osan-station-jungang/",
     title="오산역·중앙동 생활권 출장마사지｜원도심 방문 홈타이 안내",
     desc="오산역·중앙동 생활권 출장마사지 예약 전 원동, 오산터미널, 오산시청 주변을 확인하세요.",
     h1="오산역·중앙동 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("오산역·중앙동 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("오산역·중앙동 생활권", "")],
     body_content="""
 <section>
 <h2>오산역·중앙동 생활권은 어떤 범위인가요</h2>
-<p>오산역·중앙동 생활권 출장마사지는 오산시 원도심 전체를 하나로 묶어 방문 범위와 이동 동선을 안내하는 허브 페이지입니다. 오산은 행정구가 없는 단일 도시여서 권역 구분이 다소 모호하게 느껴질 수 있는데, 이 생활권은 <a href="/gyeonggi/osan/station/osan-station/">오산역</a> 역세권과 <a href="/gyeonggi/osan/jungang-dong/">중앙동</a> 행정동을 축으로 원동, 오산종합버스터미널, 오산시청 일대를 한 묶음으로 다룹니다. 단일 동 페이지가 그 동네 안의 세부 정보를 다룬다면, 이 허브 페이지는 여러 동네를 가로지르는 방문 기준과 이동 동선을 정리하는 역할을 합니다.</p>
+<p>오산역·중앙동 생활권 출장마사지는 오산시 원도심 전체를 하나로 묶어 방문 범위와 이동 동선을 안내하는 허브 페이지입니다. 오산은 행정구가 없는 단일 도시여서 권역 구분이 다소 모호하게 느껴질 수 있는데, 이 생활권은 <a href="/station/osan-station/">오산역</a> 역세권과 <a href="/jungang-dong/">중앙동</a> 행정동을 축으로 원동, 오산종합버스터미널, 오산시청 일대를 한 묶음으로 다룹니다. 단일 동 페이지가 그 동네 안의 세부 정보를 다룬다면, 이 허브 페이지는 여러 동네를 가로지르는 방문 기준과 이동 동선을 정리하는 역할을 합니다.</p>
 <p>홈타이를 처음 부르는 분이라면 자신이 머무는 숙소나 자택이 이 생활권 범위 안에 들어오는지 먼저 확인하는 것이 좋습니다. 원도심은 도로망이 촘촘하고 주차·진입 동선이 단순한 편이라 방문 소요 시간을 예측하기 쉽고, 인근에서 출발하는 방문 차량이 가장 빠르게 도착할 수 있는 권역이기도 합니다.</p>
 </section>
 
@@ -37,14 +37,14 @@ osan_station_jungang = create_area_page(
 
 <section>
 <h2>인접 생활권으로의 이동 기준</h2>
-<p>오산역 남쪽으로 내려가면 <a href="/gyeonggi/osan/area/daewon-won-dong/">대원·원동 생활권</a>과 자연스럽게 이어집니다. 원동은 오산역과 대원동 사이에 위치해 두 생활권이 겹치는 구간이 있으므로, 정확한 위치에 따라 어느 페이지를 참고할지 달라집니다. 본인 위치가 역 북측 중앙동에 가깝다면 이 페이지를, 역 남측 고현동·갈곶동 방면이라면 인접 생활권 페이지를 확인하시면 가장 빠른 경로를 안내받을 수 있습니다.</p>
+<p>오산역 남쪽으로 내려가면 <a href="/area/daewon-won-dong/">대원·원동 생활권</a>과 자연스럽게 이어집니다. 원동은 오산역과 대원동 사이에 위치해 두 생활권이 겹치는 구간이 있으므로, 정확한 위치에 따라 어느 페이지를 참고할지 달라집니다. 본인 위치가 역 북측 중앙동에 가깝다면 이 페이지를, 역 남측 고현동·갈곶동 방면이라면 인접 생활권 페이지를 확인하시면 가장 빠른 경로를 안내받을 수 있습니다.</p>
 <p>행정 정보나 도로 통제, 행사로 인한 교통 변경 같은 공식 안내는 <a href="https://www.osan.go.kr" target="_blank" rel="noopener nofollow">오산시청</a>에서 확인할 수 있습니다.</p>
 </section>
 
 <section>
 <h2>예약 동선과 준비</h2>
 <p>원도심은 권역 내부 이동 거리가 짧아 추가 이동비가 거의 발생하지 않는 권역입니다. 다만 출퇴근 시간대와 시장이 붐비는 주말 낮 시간대에는 오산역 주변 차량 정체가 잦으므로, 예약 시점에 도착 예상 시간을 함께 안내받는 것을 권합니다. 숙박업소에서 방문을 요청하는 경우 호실과 함께 건물 입구 위치를 알려주시면 도착이 매끄럽습니다.</p>
-<p>방문 전 준비사항과 진행 흐름, 취소 기준 등은 <a href="/gyeonggi/osan/reservation/">예약 안내</a> 페이지에 정리되어 있으니 처음 이용하시는 분은 미리 읽어보시길 권합니다.</p>
+<p>방문 전 준비사항과 진행 흐름, 취소 기준 등은 <a href="/reservation/">예약 안내</a> 페이지에 정리되어 있으니 처음 이용하시는 분은 미리 읽어보시길 권합니다.</p>
 </section>
 
 <section>
@@ -66,15 +66,15 @@ osan_station_jungang = create_area_page(
 )
 
 osandae_sucheong = create_area_page(
-    path="gyeonggi/osan/area/osandae-sucheong/",
+    path="area/osandae-sucheong/",
     title="오산대역·수청동 생활권 출장마사지｜세교 인접 홈타이 안내",
     desc="오산대역·수청동 생활권 출장마사지 이용 전 수청동, 세교, 신장 주변을 확인하세요.",
     h1="오산대역·수청동 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("오산대역·수청동 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("오산대역·수청동 생활권", "")],
     body_content="""
 <section>
 <h2>오산대역·수청동 생활권의 범위</h2>
-<p>오산대역·수청동 생활권 출장마사지는 <a href="/gyeonggi/osan/station/osandae-station/">오산대역</a>을 중심으로 수청동 일대 신축 주거단지를 묶어 방문 동선을 안내하는 허브 페이지입니다. 이 권역은 오산 원도심보다 비교적 최근에 개발된 구역으로, 대단지 아파트와 학원가, 근린상가가 밀집해 생활 인프라가 잘 갖춰져 있습니다. 거주 인구가 많고 단지가 촘촘해 방문 수요가 꾸준한 곳이기도 합니다.</p>
+<p>오산대역·수청동 생활권 출장마사지는 <a href="/station/osandae-station/">오산대역</a>을 중심으로 수청동 일대 신축 주거단지를 묶어 방문 동선을 안내하는 허브 페이지입니다. 이 권역은 오산 원도심보다 비교적 최근에 개발된 구역으로, 대단지 아파트와 학원가, 근린상가가 밀집해 생활 인프라가 잘 갖춰져 있습니다. 거주 인구가 많고 단지가 촘촘해 방문 수요가 꾸준한 곳이기도 합니다.</p>
 <p>홈타이를 부를 때는 단지명과 동·호수 기준으로 위치를 알려주시면 방문이 정확해집니다. 이 페이지는 개별 동 페이지와 달리, 오산대역을 축으로 수청동·세교·신장 방면까지 어떻게 이동 범위가 연결되는지를 정리하는 데 초점을 둡니다.</p>
 </section>
 
@@ -92,7 +92,7 @@ osandae_sucheong = create_area_page(
 
 <section>
 <h2>인접 권역과의 연결</h2>
-<p>수청동은 <a href="/gyeonggi/osan/area/segyeo-newtown/">세교신도시</a> 및 <a href="/gyeonggi/osan/sinjang-area/">신장 생활권</a>과 도로로 이어져 있어, 방문 위치에 따라 참고할 페이지가 달라집니다. 세교지구 신축 아파트와 함께 묶이는 주거 동선은 <a href="/gyeonggi/osan/area/sinjang-sucheong/">신장·수청 생활권</a> 페이지에서 더 자세히 다룹니다. 본인 위치가 어느 단지에 가까운지, 세교 방면인지 신장 방면인지에 따라 가장 빠른 방문 경로가 결정됩니다.</p>
+<p>수청동은 <a href="/area/segyeo-newtown/">세교신도시</a> 및 <a href="/sinjang-area/">신장 생활권</a>과 도로로 이어져 있어, 방문 위치에 따라 참고할 페이지가 달라집니다. 세교지구 신축 아파트와 함께 묶이는 주거 동선은 <a href="/area/sinjang-sucheong/">신장·수청 생활권</a> 페이지에서 더 자세히 다룹니다. 본인 위치가 어느 단지에 가까운지, 세교 방면인지 신장 방면인지에 따라 가장 빠른 방문 경로가 결정됩니다.</p>
 </section>
 
 <section>
@@ -120,15 +120,15 @@ osandae_sucheong = create_area_page(
 )
 
 sema_dong_area = create_area_page(
-    path="gyeonggi/osan/area/sema-dong/",
+    path="area/sema-dong/",
     title="세마역·세마동 생활권 출장마사지｜양산동·지곶동 홈타이 안내",
     desc="세마역·세마동 생활권 출장마사지 예약 전 세마역, 양산동, 지곶동을 확인하세요.",
     h1="세마역·세마동 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("세마역·세마동 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("세마역·세마동 생활권", "")],
     body_content="""
 <section>
 <h2>세마역·세마동 생활권 범위</h2>
-<p>세마역·세마동 생활권 출장마사지는 <a href="/gyeonggi/osan/station/sema-station/">세마역</a>과 <a href="/gyeonggi/osan/sema-dong/">세마동</a>을 축으로 양산동·지곶동 일대를 묶어 방문 동선을 안내하는 허브 페이지입니다. 세마동은 오산의 북부에 위치해 화성시 병점·동탄 권역과 맞닿아 있어, 인접 도시 경계에 가까운 분들이 이동 기준을 확인하기 좋은 곳입니다. 홈타이 방문 시 양산동·지곶동 중 어느 쪽에 가까운지에 따라 진입 경로가 달라집니다.</p>
+<p>세마역·세마동 생활권 출장마사지는 <a href="/station/sema-station/">세마역</a>과 <a href="/sema-dong/">세마동</a>을 축으로 양산동·지곶동 일대를 묶어 방문 동선을 안내하는 허브 페이지입니다. 세마동은 오산의 북부에 위치해 화성시 병점·동탄 권역과 맞닿아 있어, 인접 도시 경계에 가까운 분들이 이동 기준을 확인하기 좋은 곳입니다. 홈타이 방문 시 양산동·지곶동 중 어느 쪽에 가까운지에 따라 진입 경로가 달라집니다.</p>
 <p>이 페이지는 세마동 단일 페이지와 달리, 세마역을 중심으로 인접 역세권까지 이어지는 광역 이동 범위를 정리하는 데 초점을 둡니다. 행정구역은 오산이지만 실제 생활 동선은 화성 방면과 겹치는 구간이 많다는 점이 이 권역의 핵심 특징입니다.</p>
 </section>
 
@@ -146,7 +146,7 @@ sema_dong_area = create_area_page(
 
 <section>
 <h2>인접 역 권역으로의 이동</h2>
-<p>세마동 북측에 머무는 분이라면 <a href="/gyeonggi/osan/station/byeongjeom-nearby-area/">병점역 인접</a> 권역이나 <a href="/gyeonggi/osan/station/seodongtan-nearby-area/">서동탄역 인접</a> 권역과 생활 동선이 겹칠 수 있습니다. 두 역 모두 화성시 구역이지만 세마동에서 도로로 가까워, 위치에 따라 어느 쪽 권역 안내가 더 정확한지 판단이 필요합니다.</p>
+<p>세마동 북측에 머무는 분이라면 <a href="/station/byeongjeom-nearby-area/">병점역 인접</a> 권역이나 <a href="/station/seodongtan-nearby-area/">서동탄역 인접</a> 권역과 생활 동선이 겹칠 수 있습니다. 두 역 모두 화성시 구역이지만 세마동에서 도로로 가까워, 위치에 따라 어느 쪽 권역 안내가 더 정확한지 판단이 필요합니다.</p>
 <p>다만 행정 경계를 넘는 위치는 방문 가능 여부와 이동비 기준이 달라지므로, 정확한 주소를 기준으로 사전에 확인하는 것이 안전합니다.</p>
 </section>
 
@@ -175,11 +175,11 @@ sema_dong_area = create_area_page(
 )
 
 segyeo_newtown = create_area_page(
-    path="gyeonggi/osan/area/segyeo-newtown/",
+    path="area/segyeo-newtown/",
     title="세교신도시 출장마사지｜수청동·신장 인접 생활권 홈타이 안내",
     desc="세교신도시 출장마사지 예약 전 수청동, 신장동, 내삼미동 주변을 확인하세요.",
     h1="세교신도시 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("세교신도시 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("세교신도시 생활권", "")],
     body_content="""
 <section>
 <h2>세교신도시 생활권 개요</h2>
@@ -201,7 +201,7 @@ segyeo_newtown = create_area_page(
 
 <section>
 <h2>인접 권역과의 관계</h2>
-<p>세교신도시는 <a href="/gyeonggi/osan/station/osandae-station/">오산대역</a>과 가까워 역세권 이동이 수월하며, 남쪽으로는 기존 <a href="/gyeonggi/osan/sinjang-area/">신장 생활권</a> 및 <a href="/gyeonggi/osan/sinjang-2-dong/">신장2동</a> 주거지와 도로로 이어집니다. 신축 단지와 기존 주거지가 혼재하는 경계 구간은 <a href="/gyeonggi/osan/area/sinjang-sucheong/">신장·수청 생활권</a> 페이지를 함께 보시면 위치 판단이 쉽습니다.</p>
+<p>세교신도시는 <a href="/station/osandae-station/">오산대역</a>과 가까워 역세권 이동이 수월하며, 남쪽으로는 기존 <a href="/sinjang-area/">신장 생활권</a> 및 <a href="/sinjang-2-dong/">신장2동</a> 주거지와 도로로 이어집니다. 신축 단지와 기존 주거지가 혼재하는 경계 구간은 <a href="/area/sinjang-sucheong/">신장·수청 생활권</a> 페이지를 함께 보시면 위치 판단이 쉽습니다.</p>
 </section>
 
 <section>
@@ -229,21 +229,21 @@ segyeo_newtown = create_area_page(
 )
 
 daewon_won_dong = create_area_page(
-    path="gyeonggi/osan/area/daewon-won-dong/",
+    path="area/daewon-won-dong/",
     title="대원·원동 생활권 출장마사지｜오산역 남부 홈타이 안내",
     desc="대원·원동 생활권 출장마사지 예약 전 원동, 고현동, 갈곶동 주변을 확인하세요.",
     h1="대원·원동 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("대원·원동 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("대원·원동 생활권", "")],
     body_content="""
 <section>
 <h2>대원·원동 생활권 범위</h2>
-<p>대원·원동 생활권 출장마사지는 오산역 남부에 형성된 주거 권역을 묶어 방문 동선을 안내하는 허브 페이지입니다. <a href="/gyeonggi/osan/daewon-area/">대원 생활권</a>과 <a href="/gyeonggi/osan/daewon-1-dong/">대원1동</a>을 축으로 원동, 고현동, 갈곶동 방면까지 이어지는 범위를 다룹니다. 원도심과 남부 차량 이동권의 중간 지대에 해당해, 도보권과 차량 이동권이 함께 섞여 있는 것이 특징입니다.</p>
+<p>대원·원동 생활권 출장마사지는 오산역 남부에 형성된 주거 권역을 묶어 방문 동선을 안내하는 허브 페이지입니다. <a href="/daewon-area/">대원 생활권</a>과 <a href="/daewon-1-dong/">대원1동</a>을 축으로 원동, 고현동, 갈곶동 방면까지 이어지는 범위를 다룹니다. 원도심과 남부 차량 이동권의 중간 지대에 해당해, 도보권과 차량 이동권이 함께 섞여 있는 것이 특징입니다.</p>
 <p>이 페이지는 개별 동 페이지와 달리, 오산역을 기준으로 남쪽으로 내려가는 생활 동선이 어떻게 연결되는지를 정리합니다. 본인 위치가 역에 가까운 북측인지, 남부 외곽에 가까운지에 따라 방문 동선과 소요 시간이 크게 달라집니다.</p>
 </section>
 
 <section>
 <h2>오산역 남부의 지리</h2>
-<p>원동은 <a href="/gyeonggi/osan/station/osan-station/">오산역</a> 바로 남쪽에 위치해 역세권 생활권에 가까우면서도, 남쪽으로 갈수록 주거지 위주의 조용한 동네로 바뀝니다. 대원동 일대는 학교와 근린상가, 아파트 단지가 고르게 분포해 생활 편의성이 높고, 고현동·갈곶동 방면으로는 점차 차량 이동이 유리한 구역으로 이어집니다.</p>
+<p>원동은 <a href="/station/osan-station/">오산역</a> 바로 남쪽에 위치해 역세권 생활권에 가까우면서도, 남쪽으로 갈수록 주거지 위주의 조용한 동네로 바뀝니다. 대원동 일대는 학교와 근린상가, 아파트 단지가 고르게 분포해 생활 편의성이 높고, 고현동·갈곶동 방면으로는 점차 차량 이동이 유리한 구역으로 이어집니다.</p>
 <p>원동은 역과 가까운 만큼 상가와 주택이 밀집해 있어 골목 진입이 다소 복잡한 구간이 있습니다. 반면 대원동 아파트 단지는 진입로가 정비되어 있어 차량 접근이 수월한 편입니다. 위치를 안내할 때 단지명이나 학교·큰 건물을 기준으로 알려주시면 동선이 정확해집니다.</p>
 </section>
 
@@ -255,7 +255,7 @@ daewon_won_dong = create_area_page(
 
 <section>
 <h2>인접 권역으로의 연결</h2>
-<p>북측에 가까운 분은 <a href="/gyeonggi/osan/area/osan-station-jungang/">오산역·중앙동 생활권</a>과 동선이 겹칠 수 있고, 남측 고현동·갈곶동에 가까운 분은 <a href="/gyeonggi/osan/area/galgot-gohyeon/">갈곶·고현 생활권</a> 페이지를 참고하시는 것이 정확합니다. 원동은 두 생활권 사이에 끼어 있어, 정확한 위치에 따라 가장 빠른 방문 경로가 달라집니다.</p>
+<p>북측에 가까운 분은 <a href="/area/osan-station-jungang/">오산역·중앙동 생활권</a>과 동선이 겹칠 수 있고, 남측 고현동·갈곶동에 가까운 분은 <a href="/area/galgot-gohyeon/">갈곶·고현 생활권</a> 페이지를 참고하시는 것이 정확합니다. 원동은 두 생활권 사이에 끼어 있어, 정확한 위치에 따라 가장 빠른 방문 경로가 달라집니다.</p>
 </section>
 
 <section>
@@ -283,21 +283,21 @@ daewon_won_dong = create_area_page(
 )
 
 namchon_gwol_dong = create_area_page(
-    path="gyeonggi/osan/area/namchon-gwol-dong/",
+    path="area/namchon-gwol-dong/",
     title="남촌·궐동 생활권 출장마사지｜오산대역 인접 홈타이 안내",
     desc="남촌·궐동 생활권 출장마사지 예약 전 남촌동, 궐동, 청학동 주변을 확인하세요.",
     h1="남촌·궐동 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("남촌·궐동 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("남촌·궐동 생활권", "")],
     body_content="""
 <section>
 <h2>남촌·궐동 생활권 범위</h2>
-<p>남촌·궐동 생활권 출장마사지는 <a href="/gyeonggi/osan/namchon-dong/">남촌동</a>과 궐동, 청학동 일대를 묶어 방문 동선을 안내하는 허브 페이지입니다. 이 권역은 오산대역과 가까우면서도 원도심 중앙동과도 이어지는 중간 지대로, 주거지와 상업 시설, 대학 인근 생활권이 섞여 있는 것이 특징입니다. 홈타이 방문 시 남촌동·궐동·청학동 중 어느 쪽에 가까운지에 따라 진입 경로가 달라집니다.</p>
+<p>남촌·궐동 생활권 출장마사지는 <a href="/namchon-dong/">남촌동</a>과 궐동, 청학동 일대를 묶어 방문 동선을 안내하는 허브 페이지입니다. 이 권역은 오산대역과 가까우면서도 원도심 중앙동과도 이어지는 중간 지대로, 주거지와 상업 시설, 대학 인근 생활권이 섞여 있는 것이 특징입니다. 홈타이 방문 시 남촌동·궐동·청학동 중 어느 쪽에 가까운지에 따라 진입 경로가 달라집니다.</p>
 <p>이 페이지는 단일 동 페이지가 다루지 않는, 여러 동네를 가로지르는 광역 이동 기준을 정리합니다. 대학가 특유의 동선과 인접 원도심 동선이 함께 얽혀 있어, 위치 설명이 도착 시간을 크게 좌우하는 권역입니다.</p>
 </section>
 
 <section>
 <h2>오산대역 인접 권역의 지리</h2>
-<p>궐동과 남촌동은 <a href="/gyeonggi/osan/station/osandae-station/">오산대역</a> 인접 구역으로, 대학가 특유의 원룸·상가 밀집 구역과 아파트 단지가 함께 분포합니다. 청학동 방면으로는 주거지가 넓게 펼쳐져 있으며, 동쪽으로는 원도심 <a href="/gyeonggi/osan/jungang-dong/">중앙동</a>과 도로로 자연스럽게 연결됩니다.</p>
+<p>궐동과 남촌동은 <a href="/station/osandae-station/">오산대역</a> 인접 구역으로, 대학가 특유의 원룸·상가 밀집 구역과 아파트 단지가 함께 분포합니다. 청학동 방면으로는 주거지가 넓게 펼쳐져 있으며, 동쪽으로는 원도심 <a href="/jungang-dong/">중앙동</a>과 도로로 자연스럽게 연결됩니다.</p>
 <p>대학가 골목 구조가 복잡한 구역이 있어, 좁은 일방통행 길이나 원룸 밀집 구간은 차량 진입이 까다로울 수 있습니다. 큰 건물이나 사거리, 학교를 기준으로 위치를 알려주시면 동선이 정확해지고 도착 시간도 단축됩니다.</p>
 </section>
 
@@ -309,7 +309,7 @@ namchon_gwol_dong = create_area_page(
 
 <section>
 <h2>인접 생활권과의 관계</h2>
-<p>동쪽 중앙동에 가까운 분은 <a href="/gyeonggi/osan/area/osan-station-jungang/">오산역·중앙동 생활권</a> 페이지와 함께 보시면 위치 판단이 쉽습니다. 남촌·궐동은 오산대역과 원도심 사이에 위치해 양쪽 생활권 모두와 동선이 겹치므로, 정확한 주소 기준으로 가장 빠른 경로를 확인하는 것이 좋습니다.</p>
+<p>동쪽 중앙동에 가까운 분은 <a href="/area/osan-station-jungang/">오산역·중앙동 생활권</a> 페이지와 함께 보시면 위치 판단이 쉽습니다. 남촌·궐동은 오산대역과 원도심 사이에 위치해 양쪽 생활권 모두와 동선이 겹치므로, 정확한 주소 기준으로 가장 빠른 경로를 확인하는 것이 좋습니다.</p>
 </section>
 
 <section>
@@ -337,15 +337,15 @@ namchon_gwol_dong = create_area_page(
 )
 
 sinjang_sucheong = create_area_page(
-    path="gyeonggi/osan/area/sinjang-sucheong/",
+    path="area/sinjang-sucheong/",
     title="신장·수청 생활권 출장마사지｜세교 인접 홈타이 안내",
     desc="신장·수청 생활권 출장마사지 예약 전 신장동, 수청동, 세교지구 주변을 확인하세요.",
     h1="신장·수청 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("신장·수청 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("신장·수청 생활권", "")],
     body_content="""
 <section>
 <h2>신장·수청 생활권 범위</h2>
-<p>신장·수청 생활권 출장마사지는 신장동과 수청동, 세교지구 경계 일대를 묶어 방문 동선을 안내하는 허브 페이지입니다. 이 권역은 오산 동부의 대표적인 대규모 주거지로, <a href="/gyeonggi/osan/sinjang-area/">신장 생활권</a>의 <a href="/gyeonggi/osan/sinjang-1-dong/">신장1동</a>·<a href="/gyeonggi/osan/sinjang-2-dong/">신장2동</a>과 수청동 단지를 한 묶음으로 다룹니다. 인구 밀도가 높고 생활 인프라가 잘 갖춰져 있어 방문 수요가 많은 구역입니다.</p>
+<p>신장·수청 생활권 출장마사지는 신장동과 수청동, 세교지구 경계 일대를 묶어 방문 동선을 안내하는 허브 페이지입니다. 이 권역은 오산 동부의 대표적인 대규모 주거지로, <a href="/sinjang-area/">신장 생활권</a>의 <a href="/sinjang-1-dong/">신장1동</a>·<a href="/sinjang-2-dong/">신장2동</a>과 수청동 단지를 한 묶음으로 다룹니다. 인구 밀도가 높고 생활 인프라가 잘 갖춰져 있어 방문 수요가 많은 구역입니다.</p>
 <p>이 페이지는 개별 동 페이지와 달리, 신장과 수청을 가로지르며 세교 방면까지 이어지는 광역 이동 기준을 정리합니다. 단지가 워낙 많아 권역 내에서도 위치에 따라 가장 빠른 진입 경로가 달라지므로, 단지명을 기준으로 한 안내가 중요합니다.</p>
 </section>
 
@@ -363,7 +363,7 @@ sinjang_sucheong = create_area_page(
 
 <section>
 <h2>세교 방면과의 연결</h2>
-<p>수청동 북측에 가까운 분은 <a href="/gyeonggi/osan/area/segyeo-newtown/">세교신도시</a> 권역과 동선이 겹칠 수 있습니다. 신장·수청 생활권은 기존 주거지 중심, 세교신도시는 택지개발지구 신축 중심이라는 점에서 도시 구조가 다르므로, 본인 위치가 어느 쪽에 가까운지에 따라 참고할 페이지가 달라집니다.</p>
+<p>수청동 북측에 가까운 분은 <a href="/area/segyeo-newtown/">세교신도시</a> 권역과 동선이 겹칠 수 있습니다. 신장·수청 생활권은 기존 주거지 중심, 세교신도시는 택지개발지구 신축 중심이라는 점에서 도시 구조가 다르므로, 본인 위치가 어느 쪽에 가까운지에 따라 참고할 페이지가 달라집니다.</p>
 </section>
 
 <section>
@@ -391,15 +391,15 @@ sinjang_sucheong = create_area_page(
 )
 
 chopyeong_gajang = create_area_page(
-    path="gyeonggi/osan/area/chopyeong-gajang/",
+    path="area/chopyeong-gajang/",
     title="초평·가장동 생활권 출장마사지｜오산 서부 이동 홈타이 안내",
     desc="초평·가장동 생활권 출장마사지 예약 전 초평동, 가장동, 서동 이동 기준을 확인하세요.",
     h1="초평·가장동 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("초평·가장동 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("초평·가장동 생활권", "")],
     body_content="""
 <section>
 <h2>초평·가장동 생활권 범위</h2>
-<p>초평·가장동 생활권 출장마사지는 오산 서부에 위치한 <a href="/gyeonggi/osan/chopyeong-dong/">초평동</a>, 가장동, 서동 일대를 묶어 차량 이동 기준을 안내하는 허브 페이지입니다. 이 권역은 역세권에서 다소 벗어난 외곽으로, 산업·물류 시설과 주거지, 농지가 혼재해 차량 이동이 기본이 되는 구역입니다. 홈타이 방문 시 도로 진입 경로와 위치 좌표를 정확히 알려주시는 것이 중요합니다.</p>
+<p>초평·가장동 생활권 출장마사지는 오산 서부에 위치한 <a href="/chopyeong-dong/">초평동</a>, 가장동, 서동 일대를 묶어 차량 이동 기준을 안내하는 허브 페이지입니다. 이 권역은 역세권에서 다소 벗어난 외곽으로, 산업·물류 시설과 주거지, 농지가 혼재해 차량 이동이 기본이 되는 구역입니다. 홈타이 방문 시 도로 진입 경로와 위치 좌표를 정확히 알려주시는 것이 중요합니다.</p>
 <p>이 페이지는 도보권 중심의 도심 생활권과 달리, 차량 이동 동선과 소요 시간, 추가 이동비를 중심으로 정리합니다. 외곽 특성상 같은 권역 안에서도 위치에 따라 도착 시간과 이동비 기준이 크게 달라집니다.</p>
 </section>
 
@@ -417,7 +417,7 @@ chopyeong_gajang = create_area_page(
 
 <section>
 <h2>인접 권역과의 연결</h2>
-<p>남쪽으로는 <a href="/gyeonggi/osan/area/galgot-gohyeon/">갈곶·고현 생활권</a>과 도로로 이어지고, 북서쪽 도시 경계 가까운 위치는 <a href="/gyeonggi/osan/station/jinwi-nearby-area/">진위역 인접</a> 권역과 동선이 겹칠 수 있습니다. 물류단지 방면은 <a href="/gyeonggi/osan/area/osan-ic-logistics/">오산 IC·물류 인접</a> 권역과 함께 보시면 이동 기준 판단이 쉽습니다.</p>
+<p>남쪽으로는 <a href="/area/galgot-gohyeon/">갈곶·고현 생활권</a>과 도로로 이어지고, 북서쪽 도시 경계 가까운 위치는 <a href="/station/jinwi-nearby-area/">진위역 인접</a> 권역과 동선이 겹칠 수 있습니다. 물류단지 방면은 <a href="/area/osan-ic-logistics/">오산 IC·물류 인접</a> 권역과 함께 보시면 이동 기준 판단이 쉽습니다.</p>
 </section>
 
 <section>
@@ -445,11 +445,11 @@ chopyeong_gajang = create_area_page(
 )
 
 galgot_gohyeon = create_area_page(
-    path="gyeonggi/osan/area/galgot-gohyeon/",
+    path="area/galgot-gohyeon/",
     title="갈곶·고현 생활권 출장마사지｜오산 남부 차량 이동 홈타이 안내",
     desc="갈곶·고현 생활권 출장마사지 예약 전 갈곶동, 고현동 차량 이동 기준을 확인하세요.",
     h1="갈곶·고현 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("갈곶·고현 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("갈곶·고현 생활권", "")],
     body_content="""
 <section>
 <h2>갈곶·고현 생활권 범위</h2>
@@ -459,7 +459,7 @@ galgot_gohyeon = create_area_page(
 
 <section>
 <h2>남부 차량 이동권의 지리</h2>
-<p>고현동은 오산역 남쪽에 위치해 <a href="/gyeonggi/osan/daewon-area/">대원 생활권</a>과 도로로 이어지며, 갈곶동은 그보다 더 남쪽 외곽으로 주거지가 흩어져 있습니다. 평택 방면 도로와 가까워 도시 경계에 인접한 구역이 많고, 단지마다 진입 도로 사정이 달라 도착 시간이 위치에 따라 차이가 납니다.</p>
+<p>고현동은 오산역 남쪽에 위치해 <a href="/daewon-area/">대원 생활권</a>과 도로로 이어지며, 갈곶동은 그보다 더 남쪽 외곽으로 주거지가 흩어져 있습니다. 평택 방면 도로와 가까워 도시 경계에 인접한 구역이 많고, 단지마다 진입 도로 사정이 달라 도착 시간이 위치에 따라 차이가 납니다.</p>
 <p>외곽 주거지는 번지수만으로 위치를 특정하기 어려운 경우가 있으므로, 큰 건물이나 좌표를 기준으로 위치를 알려주시면 동선이 정확해집니다. 도로변 상가 인근이라면 상호나 간판을 기준으로 안내하셔도 도움이 됩니다.</p>
 </section>
 
@@ -471,12 +471,12 @@ galgot_gohyeon = create_area_page(
 
 <section>
 <h2>인접 권역과의 연결</h2>
-<p>북측 대원동·<a href="/gyeonggi/osan/daewon-2-dong/">대원2동</a>에 가까운 분은 대원 생활권 동선과 겹치고, 서쪽으로는 <a href="/gyeonggi/osan/area/chopyeong-gajang/">초평·가장동 생활권</a>과 도로로 이어집니다. 본인 위치가 어느 권역에 가까운지에 따라 가장 빠른 방문 경로와 이동비 기준이 달라집니다.</p>
+<p>북측 대원동·<a href="/daewon-2-dong/">대원2동</a>에 가까운 분은 대원 생활권 동선과 겹치고, 서쪽으로는 <a href="/area/chopyeong-gajang/">초평·가장동 생활권</a>과 도로로 이어집니다. 본인 위치가 어느 권역에 가까운지에 따라 가장 빠른 방문 경로와 이동비 기준이 달라집니다.</p>
 </section>
 
 <section>
 <h2>추가 이동비와 확인사항</h2>
-<p>갈곶·고현 권역은 도심에서 떨어진 남부 외곽이라 차량 이동 거리가 길어, 위치에 따라 추가 이동비가 발생할 수 있습니다. 방문 전 점검해야 할 내용은 <a href="/gyeonggi/osan/check/">이용 전 확인사항</a>에 정리되어 있으니 미리 읽어보시길 권합니다.</p>
+<p>갈곶·고현 권역은 도심에서 떨어진 남부 외곽이라 차량 이동 거리가 길어, 위치에 따라 추가 이동비가 발생할 수 있습니다. 방문 전 점검해야 할 내용은 <a href="/check/">이용 전 확인사항</a>에 정리되어 있으니 미리 읽어보시길 권합니다.</p>
 </section>
 
 <section>
@@ -499,11 +499,11 @@ galgot_gohyeon = create_area_page(
 )
 
 osan_ic_logistics = create_area_page(
-    path="gyeonggi/osan/area/osan-ic-logistics/",
+    path="area/osan-ic-logistics/",
     title="오산 IC·물류 인접 생활권 출장마사지｜차량 이동 홈타이 안내",
     desc="오산 IC·물류 인접 생활권 출장마사지 예약 전 차량 이동 기준과 이동비를 확인하세요.",
     h1="오산 IC·물류 인접 생활권 출장마사지",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("생활권 안내", None), ("오산 IC·물류 인접 생활권", "")],
+    breadcrumb=[("오산", "/"), ("생활권 안내", None), ("오산 IC·물류 인접 생활권", "")],
     body_content="""
 <section>
 <h2>오산 IC·물류 인접 생활권 범위</h2>
@@ -525,12 +525,12 @@ osan_ic_logistics = create_area_page(
 
 <section>
 <h2>인접 권역과의 연결</h2>
-<p>이 권역은 <a href="/gyeonggi/osan/area/chopyeong-gajang/">초평·가장동 생활권</a> 및 <a href="/gyeonggi/osan/area/galgot-gohyeon/">갈곶·고현 생활권</a>과 도로로 이어집니다. 물류단지 서측에 가까운 분은 <a href="/gyeonggi/osan/chopyeong-dong/">초평동</a> 방면 동선을 함께 보시면 이동 경로 판단이 쉽습니다. 위치에 따라 가장 빠른 진입 경로가 달라지므로 정확한 좌표 확인이 필요합니다.</p>
+<p>이 권역은 <a href="/area/chopyeong-gajang/">초평·가장동 생활권</a> 및 <a href="/area/galgot-gohyeon/">갈곶·고현 생활권</a>과 도로로 이어집니다. 물류단지 서측에 가까운 분은 <a href="/chopyeong-dong/">초평동</a> 방면 동선을 함께 보시면 이동 경로 판단이 쉽습니다. 위치에 따라 가장 빠른 진입 경로가 달라지므로 정확한 좌표 확인이 필요합니다.</p>
 </section>
 
 <section>
 <h2>추가 이동비와 소요 시간</h2>
-<p>오산 IC·물류 권역은 도심에서 떨어져 있고 고속도로 인접 특성상 차량 이동 거리와 진입 경로 변수가 커서, 위치에 따라 추가 이동비가 발생할 수 있습니다. 진행 흐름과 준비사항은 <a href="/gyeonggi/osan/reservation/">예약 안내</a>에서 확인하시고, 예약 시 좌표 기준으로 이동비와 도착 예상 시간을 미리 안내받으시길 권합니다.</p>
+<p>오산 IC·물류 권역은 도심에서 떨어져 있고 고속도로 인접 특성상 차량 이동 거리와 진입 경로 변수가 커서, 위치에 따라 추가 이동비가 발생할 수 있습니다. 진행 흐름과 준비사항은 <a href="/reservation/">예약 안내</a>에서 확인하시고, 예약 시 좌표 기준으로 이동비와 도착 예상 시간을 미리 안내받으시길 권합니다.</p>
 </section>
 
 <section>

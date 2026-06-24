@@ -11,11 +11,11 @@ def create_info_page(path, title, desc, h1, breadcrumb, body_content):
     }
 
 reservation = create_info_page(
-    path="gyeonggi/osan/reservation/",
+    path="reservation/",
     title="예약 안내｜오산 출장마사지·홈타이 예약 방법",
     desc="오산 출장마사지·홈타이 예약 방법, 가능 시간, 결제·취소 기준을 안내합니다.",
     h1="오산 출장마사지 예약 안내",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("예약 안내", "")],
+    breadcrumb=[("오산", "/"), ("예약 안내", "")],
     body_content="""
 <section>
 <h2>예약 절차 안내</h2>
@@ -39,7 +39,7 @@ reservation = create_info_page(
 
 <section>
 <h2>예약 변경·취소 기준</h2>
-<p>일정 변경이나 취소가 필요하신 경우 가능한 한 빨리 연락을 주시면 원활하게 처리됩니다. 갑작스러운 일이 생겨 예약을 미루거나 취소해야 할 때는 부담 갖지 마시고 바로 알려주세요. 다만 관리사가 이미 출발한 이후나 방문 직전의 갑작스러운 취소는 관리사의 이동과 다른 고객님의 예약 일정에도 영향을 줄 수 있으므로, 변경이 예상되면 조금이라도 일찍 알려주시기를 부탁드립니다. 서로에 대한 배려가 모두에게 더 나은 서비스로 이어집니다. 예약 변경 절차와 함께 챙겨야 할 사항은 <a href="/gyeonggi/osan/check/">이용 전 확인사항</a> 페이지에서 자세히 확인하실 수 있습니다.</p>
+<p>일정 변경이나 취소가 필요하신 경우 가능한 한 빨리 연락을 주시면 원활하게 처리됩니다. 갑작스러운 일이 생겨 예약을 미루거나 취소해야 할 때는 부담 갖지 마시고 바로 알려주세요. 다만 관리사가 이미 출발한 이후나 방문 직전의 갑작스러운 취소는 관리사의 이동과 다른 고객님의 예약 일정에도 영향을 줄 수 있으므로, 변경이 예상되면 조금이라도 일찍 알려주시기를 부탁드립니다. 서로에 대한 배려가 모두에게 더 나은 서비스로 이어집니다. 예약 변경 절차와 함께 챙겨야 할 사항은 <a href="/check/">이용 전 확인사항</a> 페이지에서 자세히 확인하실 수 있습니다.</p>
 </section>
 
 <section>
@@ -49,17 +49,17 @@ reservation = create_info_page(
 
 <section>
 <h2>주요 방문 지역</h2>
-<p>바로 GO는 오산시 전 지역으로 방문이 가능합니다. 특히 <a href="/gyeonggi/osan/station/osan-station/">오산역</a> 일대와 <a href="/gyeonggi/osan/jungang-dong/">중앙동</a> 생활권은 방문 수요가 많은 지역으로, 비교적 신속한 상담과 안내가 이루어집니다. 주거 밀집 지역과 오피스텔이 많아 방문 관리에 적합한 환경을 갖추고 있습니다. 홈타이 관리가 어떤 방식으로 진행되는지 궁금하신 분은 예약 전에 <a href="/gyeonggi/osan/guide/">홈타이 이용 가이드</a>를 먼저 확인해 보시기를 권합니다. 관리 과정과 준비 사항을 미리 알아두면 한층 편안하게 이용하실 수 있습니다. 바로 GO는 건전하고 정직한 방문 관리를 지향하며, 불법이거나 선정적인 요청은 정중히 사양합니다. 오직 휴식과 컨디션 관리를 위한 서비스에 집중합니다.</p>
+<p>바로 GO는 오산시 전 지역으로 방문이 가능합니다. 특히 <a href="/station/osan-station/">오산역</a> 일대와 <a href="/jungang-dong/">중앙동</a> 생활권은 방문 수요가 많은 지역으로, 비교적 신속한 상담과 안내가 이루어집니다. 주거 밀집 지역과 오피스텔이 많아 방문 관리에 적합한 환경을 갖추고 있습니다. 홈타이 관리가 어떤 방식으로 진행되는지 궁금하신 분은 예약 전에 <a href="/guide/">홈타이 이용 가이드</a>를 먼저 확인해 보시기를 권합니다. 관리 과정과 준비 사항을 미리 알아두면 한층 편안하게 이용하실 수 있습니다. 바로 GO는 건전하고 정직한 방문 관리를 지향하며, 불법이거나 선정적인 요청은 정중히 사양합니다. 오직 휴식과 컨디션 관리를 위한 서비스에 집중합니다.</p>
 </section>
 """,
 )
 
 check = create_info_page(
-    path="gyeonggi/osan/check/",
+    path="check/",
     title="이용 전 확인사항｜오산 출장마사지 예약 전 체크",
     desc="오산 출장마사지 예약 전 방문 주소, 이동비, 결제, 개인정보 기준을 확인하세요.",
     h1="오산 출장마사지 이용 전 확인사항",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("이용 전 확인사항", "")],
+    breadcrumb=[("오산", "/"), ("이용 전 확인사항", "")],
     body_content="""
 <section>
 <h2>방문 가능 주소 확인</h2>
@@ -83,7 +83,7 @@ check = create_info_page(
 
 <section>
 <h2>결제와 예약 변경 기준</h2>
-<p>결제는 방문 후 현장에서 진행하며 예약 시 선입금을 요구하지 않습니다. 상담 시 안내받은 조건대로 진행되므로 안심하셔도 됩니다. 예약 변경이나 취소는 가능한 한 빨리 연락 주시면 원활하게 처리됩니다. 자세한 예약 흐름과 절차는 <a href="/gyeonggi/osan/reservation/">예약 안내</a> 페이지에서 확인하실 수 있습니다. 관리사가 이미 출발한 이후의 갑작스러운 변경은 관리사의 이동과 다른 고객님의 예약에 영향을 줄 수 있으므로, 변경이 예상되는 경우 조금이라도 일찍 알려주시기를 부탁드립니다.</p>
+<p>결제는 방문 후 현장에서 진행하며 예약 시 선입금을 요구하지 않습니다. 상담 시 안내받은 조건대로 진행되므로 안심하셔도 됩니다. 예약 변경이나 취소는 가능한 한 빨리 연락 주시면 원활하게 처리됩니다. 자세한 예약 흐름과 절차는 <a href="/reservation/">예약 안내</a> 페이지에서 확인하실 수 있습니다. 관리사가 이미 출발한 이후의 갑작스러운 변경은 관리사의 이동과 다른 고객님의 예약에 영향을 줄 수 있으므로, 변경이 예상되는 경우 조금이라도 일찍 알려주시기를 부탁드립니다.</p>
 </section>
 
 <section>
@@ -93,17 +93,17 @@ check = create_info_page(
 
 <section>
 <h2>개인정보 처리와 운영 기준</h2>
-<p>예약 과정에서 수집되는 연락처와 방문 주소 등은 오직 예약 상담과 방문 관리 목적으로만 사용되며 안전하게 관리됩니다. 목적이 달성된 정보는 적절한 절차에 따라 처리되며, 동의 없이 다른 용도로 활용하지 않습니다. 자세한 내용은 <a href="/gyeonggi/osan/support/privacy/">개인정보처리방침</a>을 참고하시고, 궁금한 점은 <a href="/gyeonggi/osan/support/">고객센터</a>로 문의해 주세요. 또한 바로 GO는 건전한 방문 관리만을 제공하며, 불법이거나 선정적인 서비스 요청은 일절 받지 않습니다. 이는 고객님과 관리사 모두를 보호하기 위한 원칙입니다. 건강한 휴식과 컨디션 회복을 위한 정직한 관리를 지향합니다.</p>
+<p>예약 과정에서 수집되는 연락처와 방문 주소 등은 오직 예약 상담과 방문 관리 목적으로만 사용되며 안전하게 관리됩니다. 목적이 달성된 정보는 적절한 절차에 따라 처리되며, 동의 없이 다른 용도로 활용하지 않습니다. 자세한 내용은 <a href="/support/privacy/">개인정보처리방침</a>을 참고하시고, 궁금한 점은 <a href="/support/">고객센터</a>로 문의해 주세요. 또한 바로 GO는 건전한 방문 관리만을 제공하며, 불법이거나 선정적인 서비스 요청은 일절 받지 않습니다. 이는 고객님과 관리사 모두를 보호하기 위한 원칙입니다. 건강한 휴식과 컨디션 회복을 위한 정직한 관리를 지향합니다.</p>
 </section>
 """,
 )
 
 guide = create_info_page(
-    path="gyeonggi/osan/guide/",
+    path="guide/",
     title="홈타이 이용 가이드｜오산 출장마사지 방문 관리 안내",
     desc="오산 홈타이 출장마사지 방문 관리 과정과 준비사항, 위생 기준을 안내합니다.",
     h1="오산 홈타이 이용 가이드",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("홈타이 이용 가이드", "")],
+    breadcrumb=[("오산", "/"), ("홈타이 이용 가이드", "")],
     body_content="""
 <section>
 <h2>홈타이·방문 관리란</h2>
@@ -127,7 +127,7 @@ guide = create_info_page(
 
 <section>
 <h2>자주 묻는 점</h2>
-<p>예약은 어떻게 하나요? <a href="tel:0508-202-4719">0508-202-4719</a>로 전화 주시거나 <a href="https://t.me/googleseolab" target="_blank" rel="noopener nofollow">텔레그램 상담</a>으로 문의하시면 됩니다. 자세한 예약 절차는 <a href="/gyeonggi/osan/reservation/">예약 안내</a>를, 예약 전 미리 챙길 사항은 <a href="/gyeonggi/osan/check/">이용 전 확인사항</a>을 참고해 주세요. 처음 이용하시는 분도 상담원이 단계별로 안내해 드리니 어렵지 않습니다. 방문 지역은 <a href="/gyeonggi/osan/area/osan-station-jungang/">오산역·중앙동 생활권</a>을 포함한 오산시 전역입니다. 지역 생활 정보와 행정 안내는 <a href="https://www.osan.go.kr" target="_blank" rel="noopener nofollow">오산시청 누리집</a>에서도 확인하실 수 있습니다.</p>
+<p>예약은 어떻게 하나요? <a href="tel:0508-202-4719">0508-202-4719</a>로 전화 주시거나 <a href="https://t.me/googleseolab" target="_blank" rel="noopener nofollow">텔레그램 상담</a>으로 문의하시면 됩니다. 자세한 예약 절차는 <a href="/reservation/">예약 안내</a>를, 예약 전 미리 챙길 사항은 <a href="/check/">이용 전 확인사항</a>을 참고해 주세요. 처음 이용하시는 분도 상담원이 단계별로 안내해 드리니 어렵지 않습니다. 방문 지역은 <a href="/area/osan-station-jungang/">오산역·중앙동 생활권</a>을 포함한 오산시 전역입니다. 지역 생활 정보와 행정 안내는 <a href="https://www.osan.go.kr" target="_blank" rel="noopener nofollow">오산시청 누리집</a>에서도 확인하실 수 있습니다.</p>
 </section>
 
 <section>
@@ -148,11 +148,11 @@ guide = create_info_page(
 )
 
 privacy = create_info_page(
-    path="gyeonggi/osan/support/privacy/",
+    path="support/privacy/",
     title="개인정보처리방침｜바로 GO 오산 출장마사지",
     desc="바로 GO 오산 출장마사지 개인정보 수집·이용·보관·파기 기준을 안내합니다.",
     h1="개인정보처리방침",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("고객센터", "/gyeonggi/osan/support/"), ("개인정보처리방침", "")],
+    breadcrumb=[("오산", "/"), ("고객센터", "/support/"), ("개인정보처리방침", "")],
     body_content="""
 <section>
 <h2>개요</h2>
@@ -203,17 +203,17 @@ privacy = create_info_page(
 <li><strong>전화</strong> — <a href="tel:0508-202-4719">0508-202-4719</a></li>
 <li><strong>텔레그램</strong> — <a href="https://t.me/googleseolab" target="_blank" rel="noopener nofollow">텔레그램 상담</a></li>
 </ul>
-<p>예약 방법이나 서비스 전반에 관한 안내는 <a href="/gyeonggi/osan/support/">고객센터</a>에서도 확인하실 수 있습니다. 개인정보 보호는 회사가 가장 중요하게 여기는 가치 중 하나이며, 고객님이 안심하고 서비스를 이용하실 수 있도록 앞으로도 책임 있게 관리하겠습니다.</p>
+<p>예약 방법이나 서비스 전반에 관한 안내는 <a href="/support/">고객센터</a>에서도 확인하실 수 있습니다. 개인정보 보호는 회사가 가장 중요하게 여기는 가치 중 하나이며, 고객님이 안심하고 서비스를 이용하실 수 있도록 앞으로도 책임 있게 관리하겠습니다.</p>
 </section>
 """,
 )
 
 support = create_info_page(
-    path="gyeonggi/osan/support/",
+    path="support/",
     title="고객센터｜오산 출장마사지 예약·문의",
     desc="오산 출장마사지 예약·문의 고객센터. 전화 0508-202-4719, 텔레그램 상담을 안내합니다.",
     h1="오산 출장마사지 고객센터",
-    breadcrumb=[("오산", "/gyeonggi/osan/"), ("고객센터", "")],
+    breadcrumb=[("오산", "/"), ("고객센터", "")],
     body_content="""
 <section>
 <h2>고객센터 안내</h2>
@@ -239,7 +239,7 @@ support = create_info_page(
 
 <section>
 <h2>이용 안내 바로가기</h2>
-<p>서비스 이용에 도움이 되는 안내 페이지를 함께 확인해 보세요. 예약 방법과 결제·취소 기준 등 자세한 절차는 <a href="/gyeonggi/osan/reservation/">예약 안내</a>에서, 방문 주소와 출입 방식 등 예약 전 챙겨야 할 사항은 <a href="/gyeonggi/osan/check/">이용 전 확인사항</a>에서 확인하실 수 있습니다. 개인정보를 어떻게 수집하고 관리하는지에 관한 기준은 <a href="/gyeonggi/osan/support/privacy/">개인정보처리방침</a>을 참고해 주세요. 처음 이용하시는 분이라면 이 안내들을 미리 읽어 보시면 한층 수월하게 예약하실 수 있습니다. 바로 GO는 건전한 방문 관리만을 제공하며, 불법이거나 선정적인 요청은 받지 않습니다.</p>
+<p>서비스 이용에 도움이 되는 안내 페이지를 함께 확인해 보세요. 예약 방법과 결제·취소 기준 등 자세한 절차는 <a href="/reservation/">예약 안내</a>에서, 방문 주소와 출입 방식 등 예약 전 챙겨야 할 사항은 <a href="/check/">이용 전 확인사항</a>에서 확인하실 수 있습니다. 개인정보를 어떻게 수집하고 관리하는지에 관한 기준은 <a href="/support/privacy/">개인정보처리방침</a>을 참고해 주세요. 처음 이용하시는 분이라면 이 안내들을 미리 읽어 보시면 한층 수월하게 예약하실 수 있습니다. 바로 GO는 건전한 방문 관리만을 제공하며, 불법이거나 선정적인 요청은 받지 않습니다.</p>
 </section>
 
 <section>

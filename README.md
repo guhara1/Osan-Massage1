@@ -17,8 +17,7 @@
 build.py                       # 빌드 스크립트
 content/
   site.py                      # 상호·전화·도메인·메뉴(NAV)
-  root.py                      # 루트(/) → /gyeonggi/osan/ 리다이렉트
-  main.py                      # 메인 페이지
+  main.py                      # 메인 페이지 (사이트 루트 /)
   areas.py                     # 지역별 페이지 (10개 동·생활권)
   stations.py                  # 역세권 페이지 (6개)
   areas_and_stations.py        # 생활권 페이지 (10개)
@@ -26,7 +25,8 @@ content/
 assets/
   style.css                    # 프리미엄 다크 팔레트 + 오렌지 + 컴포넌트 오버레이 + Pretendard
   nav.js                       # 모바일 네비게이션
-gyeonggi/osan/                 # 생성된 메인 및 하위 페이지
+index.html                     # 생성된 메인 페이지 (루트)
+area/ station/ ...             # 생성된 하위 페이지
 ```
 
 ## 빌드
@@ -39,10 +39,10 @@ python3 build.py
 
 ## URL 구조
 
-- 메인: `/gyeonggi/osan/`
-- 지역: `/gyeonggi/osan/jungang-dong/`, `/gyeonggi/osan/daewon-area/` …
-- 역세권: `/gyeonggi/osan/station/osan-station/` …
-- 생활권: `/gyeonggi/osan/area/segyeo-newtown/` …
+- 메인: `/`
+- 지역: `/jungang-dong/`, `/daewon-area/` …
+- 역세권: `/station/osan-station/` …
+- 생활권: `/area/segyeo-newtown/` …
 - URL·메뉴명에는 `출장마사지`, `홈타이`, `massage` 등 키워드를 넣지 않는다.
 
 ## SEO 운영 원칙

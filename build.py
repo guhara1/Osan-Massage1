@@ -28,11 +28,11 @@ MIN_INDEX_CHARS = 2000
 # 가격표를 넣지 않는 경로 (루트 리다이렉트 + 정보/정책 페이지)
 PRICING_SKIP = {
     "",
-    "gyeonggi/osan/reservation/",
-    "gyeonggi/osan/check/",
-    "gyeonggi/osan/guide/",
-    "gyeonggi/osan/support/",
-    "gyeonggi/osan/support/privacy/",
+    "reservation/",
+    "check/",
+    "guide/",
+    "support/",
+    "support/privacy/",
 }
 
 # 공통 마사지 가격표 — class="pricing" 이므로 색인 글자수 계산에서 제외된다.
@@ -328,25 +328,25 @@ def render_page(page: dict) -> str:
     <nav class="footer-col" aria-label="서비스 안내">
       <p class="footer-title">서비스</p>
       <ul>
-        <li><a href="/gyeonggi/osan/">오산 출장마사지</a></li>
-        <li><a href="/gyeonggi/osan/jungang-dong/">지역별 안내</a></li>
-        <li><a href="/gyeonggi/osan/station/osan-station/">역세권 안내</a></li>
-        <li><a href="/gyeonggi/osan/area/osan-station-jungang/">생활권 안내</a></li>
-        <li><a href="/gyeonggi/osan/guide/">홈타이 이용 가이드</a></li>
+        <li><a href="/">오산 출장마사지</a></li>
+        <li><a href="/jungang-dong/">지역별 안내</a></li>
+        <li><a href="/station/osan-station/">역세권 안내</a></li>
+        <li><a href="/area/osan-station-jungang/">생활권 안내</a></li>
+        <li><a href="/guide/">홈타이 이용 가이드</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="이용 안내">
       <p class="footer-title">이용 안내</p>
       <ul>
-        <li><a href="/gyeonggi/osan/reservation/">예약안내</a></li>
-        <li><a href="/gyeonggi/osan/check/">이용 전 확인사항</a></li>
-        <li><a href="/gyeonggi/osan/support/">고객센터</a></li>
+        <li><a href="/reservation/">예약안내</a></li>
+        <li><a href="/check/">이용 전 확인사항</a></li>
+        <li><a href="/support/">고객센터</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="정책 및 기준">
       <p class="footer-title">정책</p>
       <ul>
-        <li><a href="/gyeonggi/osan/support/privacy/">개인정보처리방침</a></li>
+        <li><a href="/support/privacy/">개인정보처리방침</a></li>
         <li><a href="https://t.me/googleseolab" target="_blank" rel="noopener nofollow">문의하기</a></li>
       </ul>
     </nav>
