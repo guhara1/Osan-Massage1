@@ -81,15 +81,20 @@ _EXTRA_HEAD = f"""<meta name="naver-site-verification" content="d9586ee6fc3667ea
 </script>"""
 
 _HERO = """<div class="hero">
-  <div class="hero-content">
-    <div class="hero-badge">오산시 전지역 방문 관리</div>
-    <h1 class="hero-title">오산 출장마사지<br><span class="hero-accent">오산 홈타이</span><br>지역별 예약 안내</h1>
-    <p class="hero-lead">오산역, 오산대역, 세마역, 세교, 중앙동, 대원, 신장, 초평 생활권별 방문 가능 지역과 예약 전 확인사항을 안내합니다.</p>
-    <div class="hero-cta">
-      <a href="#areas" class="btn btn-primary">지역별 안내 보기</a>
-      <a href="#stations" class="btn btn-secondary">가까운 역 찾기</a>
-      <a href="/reservation/" class="btn btn-secondary">예약 안내 보기</a>
-      <a href="/check/" class="btn btn-secondary">이용 전 확인사항</a>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">오산시 전지역 방문 관리</div>
+      <h1 class="hero-title">오산 출장마사지<br><span class="hero-accent">오산 홈타이</span><br>지역별 예약 안내</h1>
+      <p class="hero-lead">오산역, 오산대역, 세마역, 세교, 중앙동, 대원, 신장, 초평 생활권별 방문 가능 지역과 예약 전 확인사항을 안내합니다.</p>
+      <div class="hero-cta">
+        <a href="#areas" class="btn btn-primary">지역별 안내 보기</a>
+        <a href="#stations" class="btn btn-secondary">가까운 역 찾기</a>
+        <a href="/reservation/" class="btn btn-secondary">예약 안내 보기</a>
+        <a href="/check/" class="btn btn-secondary">이용 전 확인사항</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="/assets/hero-spa.webp" alt="오산 출장마사지·홈타이 프리미엄 관리 공간 — 아늑한 조명의 관리실" width="1400" height="788" loading="eager" decoding="async" fetchpriority="high">
     </div>
   </div>
   <div class="hero-stats">
