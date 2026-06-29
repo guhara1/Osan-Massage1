@@ -94,7 +94,7 @@ _HERO = """<div class="hero">
       </div>
     </div>
     <div class="hero-media">
-      <img src="/assets/hero-spa.webp" alt="오산 출장마사지·홈타이 프리미엄 관리 공간 — 아늑한 조명의 2인 관리실" width="1680" height="940" loading="eager" decoding="async" fetchpriority="high">
+      <img src="/assets/hero-spa.webp" alt="오산 출장마사지·홈타이 프리미엄 관리 공간 — 아늑한 조명의 관리실" width="1400" height="788" loading="eager" decoding="async" fetchpriority="high">
     </div>
   </div>
   <div class="hero-stats">
